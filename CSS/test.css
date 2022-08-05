@@ -1,0 +1,75 @@
+:root{
+    --title-color: #212121;
+    --text-color: #757575;
+    --link-color: #2196F3;
+    --accent-color: #ffffff;
+}
+
+/* Основні параметри */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    color:  var(--title-color);
+    background-color: #F5F5F5;
+}
+/* ! прибрати крапки з li */
+.hidenmark{list-style: none;}
+
+/* header */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    Font-style: Bold
+    Font-size: 26px
+    Line-height: 31px
+}
+
+/* hero */
+.hero {
+    background-color: 2F303A;
+}
+
+/* Переваги */
+.hiden-titles {none
+    /* !Сховати hiden-titles */
+}
+.title {
+    Font-size: 14px;
+    Line-height: 16px;
+}
+.text {
+    Font-style: Regular;
+    font-weight: 400;
+    Font-size: 14px;
+    Line-height: 24px;
+    color: var(--text-color);
+}
+/* Діяльність */
+.main-titles{
+    Font-size: 36px;
+    Line-height: 42px;
+}
+/* Команда */
+.team-title {
+    Font-style: Medium;
+    font-weight: 500;
+    Font-size: 16px;
+    Line-height: 19px;
+}
+.teem{
+    Font-size: 16px;
+    Line-height: 19px;
+}
+
+/* Підвал */
+/* ! кольори в підвалі напівпрозорі з rgbo */
+/* 
+! header & footer на дві сторінки 
+! css один на дві сторінки
+ 1. спочатку шрифти для всіх блоків
+ 2. кольор і бекграунд
+ 3. рамки і відступи
+ 4. активні елементи і кнопки
+ 5. 2-га сторінка
+ 6. css на другу сторінку
+*/
