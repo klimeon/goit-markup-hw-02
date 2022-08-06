@@ -3,6 +3,8 @@
     --text-color: #757575;
     --link-color: #2196F3;
     --accent-color: #ffffff;
+    --background-primery-color: #2F303A;
+    --background-secondary-color: #F5F4FA;
 }
 
 /* Основні параметри */
@@ -17,16 +19,17 @@ body {
 .hidenmark{list-style: none;}
 
 /* header */
-.logo {
+.logo a {
     font-family: 'Raleway', sans-serif;
-    Font-style: Bold
-    Font-size: 26px
-    Line-height: 31px
+    font-style: Bold;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
 }
 
 /* hero */
 .hero {
-    background-color: 2F303A;
+    background-color: var(--background-primery-color);
 }
 
 /* Переваги */
@@ -34,34 +37,53 @@ body {
     /* !Сховати hiden-titles */
 }
 .title {
-    Font-size: 14px;
-    Line-height: 16px;
+    font-size: 14px;
+    line-height: 16px;
 }
 .text {
-    Font-style: Regular;
+    font-style: Regular;
     font-weight: 400;
-    Font-size: 14px;
-    Line-height: 24px;
+    font-size: 14px;
+    line-height: 24px;
     color: var(--text-color);
 }
 /* Діяльність */
 .main-titles{
-    Font-size: 36px;
-    Line-height: 42px;
+    font-size: 36px;
+    line-height: 42px;
 }
 /* Команда */
 .team-title {
-    Font-style: Medium;
+    background-color: var(--background-secondary-color);
+    font-style: Medium;
     font-weight: 500;
-    Font-size: 16px;
-    Line-height: 19px;
+    font-size: 16px;
+    line-height: 19px;
 }
 .teem{
-    Font-size: 16px;
-    Line-height: 19px;
+    font-size: 16px;
+    line-height: 19px;
+    /* в парі з text */
 }
 
 /* Підвал */
+footer {
+    background-color: var(--background-primery-color);
+}
+.logo {
+    /* Доробити */
+}
+.contactus a {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+a .map {
+    color: var(--accent-color);
+    /* !Не працює - доробити */
+}
+
 /* ! кольори в підвалі напівпрозорі з rgbo */
 /* 
 ! header & footer на дві сторінки 
