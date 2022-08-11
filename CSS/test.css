@@ -1,39 +1,57 @@
 :root{
     --title-color: #212121;
     --text-color: #757575;
-    --link-color: #2196F3;
-    --accent-color: #ffffff;
-    --background-primery-color: #2F303A;
-    --background-secondary-color: #F5F4FA;
+    --accent-color: #2196F3;
+    --bcg-pri-color: #2F303A;
+    --bcg-sec-color: #F5F4FA;
+    --bcg-thr-color: #F5F5F5
+    --button-color: #000000;
+    --bcg-accent-color: #ffffff;
+    --spec-link-color: rgba(255, 255, 255, 0.6);
+
 }
 
-/* Основні параметри */
+/* main styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    font-style: bold;
-    font-weight: 700;
     color:  var(--title-color);
-    background-color: #F5F5F5;
+    background-color: var(--bcg-accent-color);
+    font-family: 'Roboto', sans-serif;
+    font-style: 400;
+    font-size: 14px;
+    line-height: 24px;
 }
+.header {
+}
+/* special main setting */
 /* ! прибрати крапки з li */
 .hidenmark{list-style: none;}
+/* кнопки */
+.button {
+    color: var(--button-color);
+    background-color: var(--bcg-accent-color);
+}
+.button.pri {
+    color: var(--bcg-accent-color);
+    background-color: var(--accent-color);
+}
+.button.sec {
+    color: var(--accent-color);
+    background-color: var(--bcg-accent-color);
+}
 
 /* header */
-.logo a {
-    font-family: 'Raleway', sans-serif;
-    font-style: Bold;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-}
+
+
 
 /* hero */
-.hero {
-    background-color: var(--background-primery-color);
+.hero {ar(--bcg-pri-color);
 }
+    background-color: v
 
 /* Переваги */
-.hiden-titles {none
+.hiden-titles {
+    position: absolute;
+    top: -100%;
     /* !Сховати hiden-titles */
 }
 .title {
@@ -53,12 +71,13 @@ body {
     line-height: 42px;
 }
 /* Команда */
+.ourteam {
+    background-color: var(--bcg-sec-color);
+}
 .team-title {
-    background-color: var(--background-secondary-color);
     font-style: Medium;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 16px;24px
 }
 .teem{
     font-size: 16px;
@@ -68,19 +87,35 @@ body {
 
 /* Підвал */
 footer {
-    background-color: var(--background-primery-color);
+    background-color: var(--bcg-pri-color);
+    font-style: normal;
 }
+/* logo header&footer */
 .logo {
-    /* Доробити */
+    font-family: 'Raleway', sans-serif;
+    font-style: Bold;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: var(--button-color);
 }
+.footer > .logo {
+    color: var(--bcg-accent-color);
+}
+.accent {
+    color: var(--accent-color)
+}
+/* Пыдкреслене лого!!! */
+
 .contactus a {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--spec-link-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
 }
+
 a .map {
-    color: var(--accent-color);
+    color: var(--bcg-accent-color);
     /* !Не працює - доробити */
 }
 
@@ -95,3 +130,7 @@ a .map {
  5. 2-га сторінка
  6. css на другу сторінку
 */
+
+    line-height: 19px;
+}
+

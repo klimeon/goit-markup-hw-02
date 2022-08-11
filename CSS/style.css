@@ -1,0 +1,39 @@
+/* general */
+:root{
+    --title-color: #212121;
+    --text-color: #757575;
+    --accent-color: #2196F3;
+    --bcg-pri-color: #2F303A;
+    --bcg-sec-color: #F5F4FA;
+    --bcg-thr-color: #F5F5F5
+    --batton-color: #000000;
+    --bcg-accent-color: #ffffff;
+    --spec-link-color: rgba(255, 255, 255, 0.6);
+
+}
+
+/* header */
+.header {
+    color: var(--title-color);
+    background-color: var(--bcg-accent-color);
+}
+
+/* main */
+.hero {
+    color: var(--bcg-accent-color);
+    background-color: var(--bcg-pri-color);
+}
+.preference [
+
+]
+.activity {
+
+}
+.team {
+
+}
+
+/* footer */
+adress {
+
+}
