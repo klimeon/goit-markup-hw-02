@@ -6,7 +6,7 @@
     --bcg-sec-color: #F5F4FA;
     --bcg-thr-color: #F5F5F5
     --button-color: #000000;
-    --bcg-accent-color: #ffffff;
+    --main-wight-color: #ffffff;
     --spec-link-color: rgba(255, 255, 255, 0.6);
 
 }
@@ -14,123 +14,151 @@
 /* main styles */
 body {
     color:  var(--title-color);
-    background-color: var(--bcg-accent-color);
+    background-color: var(--main-wight-color);
     font-family: 'Roboto', sans-serif;
     font-style: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
+    letter-spacing: 3%;
+    /* перевірити до основного стилю */
 }
-.header {
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
 }
+
 /* special main setting */
 /* ! прибрати крапки з li */
 .hidenmark{list-style: none;}
-/* кнопки */
+/* ! кнопки */
 .button {
     color: var(--button-color);
-    background-color: var(--bcg-accent-color);
+    background-color: var(--main-wight-color);
 }
 .button.pri {
-    color: var(--bcg-accent-color);
+    color: var(--main-wight-color);
     background-color: var(--accent-color);
 }
 .button.sec {
     color: var(--accent-color);
-    background-color: var(--bcg-accent-color);
+    background-color: var(--main-wight-color);
 }
 
-/* header */
 
+/* header */
+.header {
+    /* колір ок */
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 2%;
+    /* лого знизу */
+}
+.header a {
+    text-decoration: none;
+}
+/* колір наведення! */
+/* ефекти наведення! */
 
 
 /* hero */
-.hero {ar(--bcg-pri-color);
+.hero {
+    color: var(--main-wight-color);
+    background-color: var(--bcg-pri-color);
+    letter-spacing: 6%;
 }
-    background-color: v
+.hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+}
+/* кнопка! не працює*/
 
-/* Переваги */
+
+/* preference */
 .hiden-titles {
-    position: absolute;
-    top: -100%;
     /* !Сховати hiden-titles */
 }
 .title {
+    font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
 }
 .text {
-    font-style: Regular;
+    color: var(--text-color);
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    color: var(--text-color);
+    line-height: 1.7;
 }
-/* Діяльність */
-.main-titles{
-    font-size: 36px;
-    line-height: 42px;
-}
-/* Команда */
+
+
+/* activity */
+/* заголовок ок */
+
+
+/* team */
 .ourteam {
     background-color: var(--bcg-sec-color);
 }
+.aboutus {
+    background-color: var(--main-wight-color);
+}
 .team-title {
-    font-style: Medium;
     font-weight: 500;
-    font-size: 16px;24px
+    font-size: 16px;
+    line-height: 1.19;
 }
 .teem{
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     /* в парі з text */
 }
 
-/* Підвал */
+
+/* далі перевірити */
+/* footer */
 footer {
     background-color: var(--bcg-pri-color);
+}
+address a {
+    text-decoration: none;
     font-style: normal;
+    color: var(--spec-link-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.map > a {
+    color: var(--main-wight-color);
+    /* !Не працює - доробити */
 }
 /* logo header&footer */
 .logo {
-    font-family: 'Raleway', sans-serif;
-    font-style: Bold;
+    color: var(--button-color);
+    text-decoration: none;
+    font-family: 'raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    color: var(--button-color);
-}
-.footer > .logo {
-    color: var(--bcg-accent-color);
+    line-height: 1.19;
 }
 .accent {
     color: var(--accent-color)
 }
-/* Пыдкреслене лого!!! */
-
-.contactus a {
-    color: var(--spec-link-color);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+.footer > .logo {
+    color: var(--main-wight-color);
 }
 
-a .map {
-    color: var(--bcg-accent-color);
-    /* !Не працює - доробити */
-}
 
-/* ! кольори в підвалі напівпрозорі з rgbo */
+
 /* 
 ! header & footer на дві сторінки 
 ! css один на дві сторінки
- 1. спочатку шрифти для всіх блоків
- 2. кольор і бекграунд
+ 1. кольор і бекграунд
+ 2. шрифти для всіх блоків
  3. рамки і відступи
  4. активні елементи і кнопки
  5. 2-га сторінка
  6. css на другу сторінку
 */
 
-    line-height: 19px;
-}
 
