@@ -20,6 +20,7 @@ body {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 3%;
+    text-align: center;
     /* перевірити до основного стилю */
 }
 h2 {
@@ -64,11 +65,11 @@ h2 {
 
 /* hero */
 .hero {
-    color: var(--main-wight-color);
-    background-color: var(--bcg-pri-color);
+        background-color: var(--bcg-pri-color);
     letter-spacing: 6%;
 }
 .hero-title {
+    color: var(--main-wight-color);
     font-size: 44px;
     line-height: 1.36;
 }
@@ -76,6 +77,9 @@ h2 {
 
 
 /* preference */
+.preference {
+    text-align: left;
+}
 .hiden-titles {
     /* !Сховати hiden-titles */
 }
@@ -119,6 +123,7 @@ h2 {
 /* footer */
 footer {
     background-color: var(--bcg-pri-color);
+    text-align: left;
 }
 address a {
     text-decoration: none;
@@ -128,7 +133,7 @@ address a {
     font-size: 14px;
     line-height: 1.7;
 }
-.map > a {
+address > a .map {
     color: var(--main-wight-color);
     /* !Не працює - доробити */
 }
@@ -153,8 +158,8 @@ address a {
 /* 
 ! header & footer на дві сторінки 
 ! css один на дві сторінки
- 1. кольор і бекграунд
- 2. шрифти для всіх блоків
+ 1. кольор і бекграунд !OK
+ 2. шрифти для всіх блоків !OK
  3. рамки і відступи
  4. активні елементи і кнопки
  5. 2-га сторінка
