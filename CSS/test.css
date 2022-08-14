@@ -15,13 +15,13 @@
 body {
     color:  var(--title-color);
     background-color: var(--main-wight-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto' sans-serif ;
     font-style: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 3%;
     text-align: center;
-    /* перевірити до основного стилю */
+    /* !перевірити до основного стилю */
 }
 h2 {
     font-weight: 700;
@@ -30,20 +30,16 @@ h2 {
 }
 
 /* special main setting */
-/* ! прибрати крапки з li */
+/* прибрати крапки з li */
 .hidenmark{list-style: none;}
-/* ! кнопки */
+/* кнопки */
 .button {
-    color: var(--button-color);
-    background-color: var(--main-wight-color);
+    color: var(--title-color);
+    background-color: var(--bcg-sec-color);
 }
-.button.pri {
+.button.pri:hover, .button.pri:focus {
     color: var(--main-wight-color);
     background-color: var(--accent-color);
-}
-.button.sec {
-    color: var(--accent-color);
-    background-color: var(--main-wight-color);
 }
 
 
@@ -57,10 +53,15 @@ h2 {
     /* лого знизу */
 }
 .header a {
+    color: var(--title-color);
     text-decoration: none;
 }
-/* колір наведення! */
-/* ефекти наведення! */
+/* ефект наведення */
+.header a:hover, .header a:focus, .header a:active {
+    color: var(--accent-color);
+    /* !актив не працює */
+}
+
 
 
 /* hero */
@@ -73,7 +74,6 @@ h2 {
     font-size: 44px;
     line-height: 1.36;
 }
-/* кнопка! не працює*/
 
 
 /* preference */
@@ -119,7 +119,6 @@ h2 {
 }
 
 
-/* далі перевірити */
 /* footer */
 footer {
     background-color: var(--bcg-pri-color);
@@ -127,21 +126,19 @@ footer {
 }
 address a {
     text-decoration: none;
-    font-style: normal;
-    color: var(--spec-link-color);
+    color: var(--main-wight-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-}
-address > a .map {
-    color: var(--main-wight-color);
-    /* !Не працює - доробити */
+} 
+.contacts {
+    color: var(--spec-link-color);
 }
 /* logo header&footer */
 .logo {
     color: var(--button-color);
     text-decoration: none;
-    font-family: 'raleway';
+    font-family: 'raleway' sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -154,6 +151,16 @@ address > a .map {
 }
 
 
+/* main-portfolio */
+/* portfolio=hiden-titles */
+.our-works {
+    text-align: left;
+}
+.main-portfolio h2 {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 6%;
+}
 
 /* 
 ! header & footer на дві сторінки 
