@@ -8,27 +8,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/test.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <!-- Шапка -->
-    <header class="header"> 
-        <nav class="navigation">
-            <!-- Логотип -->
-            <a class="logo" href="/"><span class="accent">Web</span>Studio</a>
-            <!-- Навігація -->
-            <ul class="navigation-link hidenmark">
-                <li><a href="./index.html">Студія</a></li>
-                <li><a href="./portfolio.html">Портфоліо</a></li>
-                <li><a href="порожньо">Контакти</a></li>
-            </ul>
-        </nav>
-        <!-- Mail, Tel. -->
-        <ul class="contact-button hidenmark">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+   <header class="header"> 
+    <nav class="nav">
+        <!-- Логотип -->
+        <a class="logo" href="/"><span class="accent">Web</span>Studio</a>
+        <!-- Навігація -->
+        <ul class="nav-link hidenmark hover">
+            <li><a href="./index.html" class="link">Студія</a></li>
+            <li><a href="./portfolio.html"class="link current">Портфоліо</a></li>
+            <li><a href="порожньо"class="link">Контакти</a></li>
         </ul>
-    </header>
+    </nav>
+    <!-- Mail, Tel. -->
+    <ul class="contact-link hidenmark hover">
+        <li><a href="mailto:info@devstudio.com"class="link">info@devstudio.com</a></li>
+        <li><a href="tel:+380961111111"class="link">+38 096 111 11 11</a></li>
+    </ul>
+</header>
+
 
    <!-- Основний контент -->
    <main class="main-portfolio">
@@ -37,19 +38,19 @@
             <nav>
                 <ul class="hidenmark">
                     <li>
-                        <button class="button pri sec" type="button">Усі</button>
+                        <button class="button pri" type="button">Усі</button>
                     </li>
                     <li>
-                        <button class="button pri sec" type="button">Веб-сайти</button>
+                        <button class="button pri" type="button">Веб-сайти</button>
                     </li>
                     <li>
-                        <button class="button pri sec" type="button">Додатки</button>
+                        <button class="button pri" type="button">Додатки</button>
                     </li>
                     <li>
-                        <button class="button pri sec" type="button">Дизайн</button>
+                        <button class="button pri" type="button">Дизайн</button>
                     </li>
                     <li>
-                        <button class="button pri sec" type="button">Маркетинг</button>
+                        <button class="button pri" type="button">Маркетинг</button>
                     </li>
                 </ul>
             </nav>
@@ -118,11 +119,11 @@
     <!-- Логотип -->
     <a class="logo" href="/"><span class="accent">Web</span>Studio</a>
     <!-- Контакти -->
-    <address class="contactus">
-        <ul class="hidenmark">
-            <li><a href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4267641,30.5365434,17z/data=!4m12!1m6!3m5!1s0x40d4c9352844eb2b:0x50bd53498a7bb884!2z0KDQtdCz0ZbQvtC90LDQu9GM0L3QuNC5INGB0LXRgNCy0ZbRgdC90LjQuSDRhtC10L3RgtGAINCc0JLQoSDQsiDQmtC40ZfQstGB0YzQutGW0Lkg0L7QsdC70LDRgdGC0ZY!8m2!3d50.4267607!4d30.5387374!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=uk" class="map">м. Київ, пр-т Лесі Українки, 26</a></li>
-            <li><a href="mailto:info@example.com">info@example.com</a></li>
-            <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+    <address>
+        <ul class="hidenmark contactus">
+            <li><a href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4267641,30.5365434,17z/data=!4m12!1m6!3m5!1s0x40d4c9352844eb2b:0x50bd53498a7bb884!2z0KDQtdCz0ZbQvtC90LDQu9GM0L3QuNC5INGB0LXRgNCy0ZbRgdC90LjQuSDRhtC10L3RgtGAINCc0JLQoSDQsiDQmtC40ZfQstGB0YzQutGW0Lkg0L7QsdC70LDRgdGC0ZY!8m2!3d50.4267607!4d30.5387374!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=uk" class="inmap">м. Київ, пр-т Лесі Українки, 26</a></li>
+            <li><a href="mailto:info@example.com" class="contacts">info@example.com</a></li>
+            <li><a href="tel:+380991111111" class="contacts">+38 099 111 11 11</a></li>
         </ul>
     </address>
    </footer>
