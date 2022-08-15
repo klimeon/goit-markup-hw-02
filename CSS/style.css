@@ -15,11 +15,11 @@
 body {
     color:  var(--title-color);
     background-color: var(--main-wight-color);
-    font-family: 'Roboto' sans-serif ;
-    font-style: 400;
+    font-family: 'Roboto', sans-serif ;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     text-align: center;
     /* !перевірити до основного стилю */
 }
@@ -36,6 +36,9 @@ h2 {
 .button {
     color: var(--title-color);
     background-color: var(--bcg-sec-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
     cursor: pointer;
 }
 .button.pri:hover, .button.pri:focus {
@@ -45,11 +48,11 @@ h2 {
 
 
 /* header */
-/* logo header&footer */
+/* logo */
 .logo {
     color: var(--button-color);
     text-decoration: none;
-    font-family: 'raleway' sans-serif;
+    font-family: 'raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -62,7 +65,7 @@ h2 {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
 }
 .header a {
     color: var(--title-color);
@@ -81,7 +84,8 @@ h2 {
 /* hero */
 .hero {
     background-color: var(--bcg-pri-color);
-    letter-spacing: 6%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 .hero-title {
     color: var(--main-wight-color);
@@ -101,11 +105,10 @@ h2 {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-transform: uppercase;
 }
 .text {
     color: var(--text-color);
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.7;
 }
 
@@ -139,10 +142,10 @@ footer {
     text-align: left;
 }
 address a {
-    font-style: normal;
     color: var(--main-wight-color);
-    font-weight: 400;
-    font-size: 14px;
+    font-style: normal;
+    text-decoration: none;
+    
     line-height: 1.7;
 } 
 .contacts {
@@ -158,13 +161,18 @@ address a {
 
 /* main-portfolio */
 /* portfolio=hiden-titles */
+.main-portfolio .button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
 .our-works {
     text-align: left;
 }
 .main-portfolio h2 {
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 6%;
+    letter-spacing: 0.06em;
 }
 
 /* 
