@@ -147,6 +147,9 @@ address a {
 .contacts {
     color: var(--spec-link-color);
 }
+.contactus a:hover, .contactus a:focus {
+    color: var(--accent-color);
+}
 .footer > .logo {
     color: var(--main-wight-color);
 }
