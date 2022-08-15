@@ -36,6 +36,7 @@ h2 {
 .button {
     color: var(--title-color);
     background-color: var(--bcg-sec-color);
+    cursor: pointer;
 }
 .button.pri:hover, .button.pri:focus {
     color: var(--main-wight-color);
