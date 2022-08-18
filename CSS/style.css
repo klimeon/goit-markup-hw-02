@@ -42,6 +42,10 @@ h2 {
     color: var(--main-wight-color);
     background-color: var(--accent-color);
 }
+.button.sec {
+    color: var(--main-wight-color);
+    background-color: var(--accent-color);
+}
 
 
 /* header */
@@ -74,7 +78,6 @@ h2 {
 /* ефект наведення */
 .hover .link:hover,  .hover .link:focus {
     color: var(--accent-color);
-    /* !актив не працює */
 }
 .hover .link.current {
     color: var(--accent-color);
