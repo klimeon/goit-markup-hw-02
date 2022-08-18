@@ -16,12 +16,9 @@ body {
     color:  var(--title-color);
     background-color: var(--main-wight-color);
     font-family: 'Roboto', sans-serif ;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: center;
-    /* !перевірити до основного стилю */
 }
 h2 {
     font-weight: 700;
@@ -67,9 +64,12 @@ h2 {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.header a {
+.header .link {
     color: var(--title-color);
     text-decoration: none;
+}
+.contact-link .link {
+    color: var(--text-color)
 }
 /* ефект наведення */
 .hover .link:hover,  .hover .link:focus {
@@ -173,6 +173,10 @@ address a {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+}
+.portfolio {
+    font-size: 16px;
+    line-height: 1.87;
 }
 
 /* 
