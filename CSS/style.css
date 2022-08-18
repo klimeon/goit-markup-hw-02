@@ -144,18 +144,14 @@ footer {
     background-color: var(--bcg-pri-color);
     text-align: left;
 }
-address a {
+address .link {
     color: var(--main-wight-color);
     font-style: normal;
     text-decoration: none;
-    
     line-height: 1.7;
 } 
-.contacts {
+.link.contacts {
     color: var(--spec-link-color);
-}
-.contactus a:hover, .contactus a:focus {
-    color: var(--accent-color);
 }
 .footer > .logo {
     color: var(--main-wight-color);
@@ -172,7 +168,7 @@ address a {
 .our-works {
     text-align: left;
 }
-.main-portfolio h2 {
+.portfolio-title {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
