@@ -9,7 +9,14 @@
     --main-wight-color: #ffffff;
     --spec-link-color: rgba(255, 255, 255, 0.6);
 
+    --single-padding : 94px;
 }
+
+
+
+/* Тимчасове оформлення-видалити */
+/* *{
+    outline: 0.5px dashed rgb(168, 158, 156); */
 
 /* main styles */
 body {
@@ -25,10 +32,72 @@ h2 {
     font-size: 36px;
     line-height: 1.16;
 }
+.container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;    
+    
+    /* тимчасово
+    background-color: rgb(197, 192, 192); */
+}
+.flex {
+    display: inline-flex;
+    align-items: center;
+}
+.box:not(:last-child) {
+    margin-top: 0px;
+    margin-bottom: var(--single-padding);
+    
+    /* тимчасово
+    background-color: red; */
+}
+/* скинути крайні відступи */
+body .end {
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+body .begin {
+    margin-top: 0px;
+    margin-left: 0px;
+}
 
 /* special main setting */
-/* прибрати крапки з li */
-.hidenmark{list-style: none;}
+/* прибрати крапки з li та відступи ul */
+.hidenmark{
+    list-style: none;
+
+    padding: 0px;
+    margin: 0px;
+}
+/* !Сховати hiden-titles  */
+.hiden-titles {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+/* !!!!!Переробити */
+[class*="title"] {
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+/* .main-home .end-block {
+    margin-bottom: 0px;
+}
+.main-home .start-block {
+    margin-top: 0px;
+} */
+/* !!!!!!Переробити */
+
 /* кнопки */
 .button {
     color: var(--title-color);
@@ -36,7 +105,13 @@ h2 {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    text-align: center;
+    
     cursor: pointer;
+    display: inline-block;
+    border-radius: 6px;
+    padding: 10px 32px;
+    /* min-width: 216px; */
 }
 .button.pri:hover, .button.pri:focus {
     color: var(--main-wight-color);
@@ -49,6 +124,9 @@ h2 {
 
 
 /* header */
+.header {
+    border: 1px solid #ECECEC ;
+    }
 /* logo */
 .logo {
     color: var(--button-color);
@@ -57,6 +135,7 @@ h2 {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    
 }
 .accent {
     color: var(--accent-color)
@@ -68,12 +147,32 @@ h2 {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.header .link {
+header .link {  
     color: var(--title-color);
     text-decoration: none;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.nav-link {
+    display: flex;
+    margin-left: 93px;
+}
+.nav-item + .nav-item {
+    margin-left: 50px;
+    /* можна замінити на li */
+}
+.contact-link {
+    display: flex;
+    margin-left: auto;
 }
 .contact-link .link {
-    color: var(--text-color)
+    color: var(--text-color);
+}
+.contact-item + .contact-item {
+    margin-left: 50px;
+    /* можна замінити на li */
 }
 /* ефект наведення */
 .hover .link:hover,  .hover .link:focus {
@@ -90,10 +189,15 @@ h2 {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
+/* !тимчасово */
+.position {
+    padding: 200px 240pt;
+}
 .hero-title {
     color: var(--main-wight-color);
     font-size: 44px;
     line-height: 1.36;
+    margin-bottom: 30px;
 }
 
 
@@ -101,8 +205,9 @@ h2 {
 .preference {
     text-align: left;
 }
-.hiden-titles {
-    /* !Сховати hiden-titles */
+.preference-coloms {
+    display: flex;
+    justify-content: space-between;
 }
 .title {
     font-weight: 700;
@@ -110,14 +215,28 @@ h2 {
     line-height: 1.14;
     text-transform: uppercase;
 }
-.text {
+[class*="text"] {
     color: var(--text-color);
     line-height: 1.7;
+
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.preference-text {
+    margin-right: 30px;
+}
+.single {
+    padding-top: var(--single-padding);
+    padding-bottom: var(--single-padding);
 }
 
 
 /* activity */
-/* заголовок ок */
+.activity-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
 
 
 /* team */
@@ -126,6 +245,10 @@ h2 {
 }
 .aboutus {
     background-color: var(--main-wight-color);
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50pt;
 }
 .team-title {
     font-weight: 500;
@@ -143,6 +266,8 @@ h2 {
 footer {
     background-color: var(--bcg-pri-color);
     text-align: left;
+    
+    padding: 60px 0px;
 }
 address .link {
     color: var(--main-wight-color);
@@ -153,20 +278,42 @@ address .link {
 .link.contacts {
     color: var(--spec-link-color);
 }
-.footer > .logo {
+.footer .logo {
     color: var(--main-wight-color);
+
+    display: block;
+    margin-bottom: 20px;
+}
+.contactus-item {
+    margin-bottom: 9px;
 }
 
 
 /* main-portfolio */
-/* portfolio=hiden-titles */
+
+.select-button {
+    display: flex;
+    justify-content: center;
+}
 .main-portfolio .button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
 }
+.works-item {
+    width: calc((100% - 2 * 30px) / 3);
+    margin-top: 30px;
+    margin-right: 30px;
+    border: 1px solid #EEEEEE;
+}
+.works-item:nth-child(3n) {
+    margin-right: 0px;
+}
 .our-works {
     text-align: left;
+    
+    display: flex;
+    flex-wrap: wrap;
 }
 .portfolio-title {
     font-size: 18px;
@@ -188,4 +335,12 @@ address .link {
  6. css на другу сторінку !ok
 */
 
+/* Д.З.№3
+    1. хедер - ok
 
+    2. !сховати hidden title(переробити)
+
+    3. !Оформити настуані контейнера
+
+    ! Прибрати всі коменти перед здачею
+*/
