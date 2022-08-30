@@ -14,9 +14,12 @@
 
 
 
+<<<<<<< HEAD
 /* Тимчасове оформлення-видалити */
 /* *{
     outline: 0.5px dashed rgb(168, 158, 156); */
+=======
+>>>>>>> 629e39c33cd61d00f54dc1aedc52bdc3db071e9b
 
 /* main styles */
 body {
@@ -39,9 +42,12 @@ h2 {
     margin-right: auto;
     margin-top: 0px;
     margin-bottom: 0px;    
+<<<<<<< HEAD
     
     /* тимчасово
     background-color: rgb(197, 192, 192); */
+=======
+>>>>>>> 629e39c33cd61d00f54dc1aedc52bdc3db071e9b
 }
 .flex {
     display: inline-flex;
@@ -49,10 +55,14 @@ h2 {
 }
 .box:not(:last-child) {
     margin-top: 0px;
+<<<<<<< HEAD
     margin-bottom: var(--single-padding);
     
     /* тимчасово
     background-color: red; */
+=======
+    margin-bottom: var(--single-padding);  
+>>>>>>> 629e39c33cd61d00f54dc1aedc52bdc3db071e9b
 }
 /* скинути крайні відступи */
 body .end {
@@ -324,6 +334,7 @@ address .link {
     font-size: 16px;
     line-height: 1.87;
 }
+<<<<<<< HEAD
 
 /* 
 
@@ -344,3 +355,5 @@ address .link {
 
     ! Прибрати всі коменти перед здачею
 */
+=======
+>>>>>>> 629e39c33cd61d00f54dc1aedc52bdc3db071e9b
